@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Main.cs" />
      <Compile Include="Assets\Scripts\Object\BackGroundScrollDown.cs" />
+     <Compile Include="Assets\Scripts\Object\Island.cs" />
      <Compile Include="Assets\Scripts\System\LevelGenerate.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/unity2017_3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -13,11 +13,8 @@ public class BackGroundScrollDown : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
 
-    void LateUpdate()
+    void Update()
 	{
 		Camera mainCamera = Camera.main;
 		if(transform.position.y <= -2f * mainCamera.orthographicSize)
