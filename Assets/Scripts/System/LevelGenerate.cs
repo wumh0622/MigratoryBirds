@@ -58,13 +58,13 @@ public class LevelGenerate : MonoBehaviour {
 
     public void GenerateIsland()
 	{
-        float randomValue = Random.value * (goodIslandChances + badIslandChances);
+        float randomValue = Random.value * (goodIslandChances + badIslandChances + enemySpawnChances);
         
         if(randomValue < goodIslandChances)
         {
             InstantiatePrefab(goodIsland);
         }
-        else
+        else if(randomValue-goodIslandChances <badIslandChances)
         {
             if (badCount < 8)
             {
@@ -77,20 +77,7 @@ public class LevelGenerate : MonoBehaviour {
             }
             badCount++;
         }
-
-    }
-
-    #endregion
-    
-    //敵人生成
-    #region 
-
-    
-
-    void GenerateEnemy()
-    {
-        float randomValue = Random.value * 100;
-        if (randomValue < enemySpawnChances)
+        else
         {
             InstantiatePrefab(enemy);
         }
