@@ -53,6 +53,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Main.cs" />
      <Compile Include="Assets\Scripts\Object\BackGroundScrollDown.cs" />
+     <Compile Include="Assets\Scripts\Object\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Object\EnemyBase.cs" />
      <Compile Include="Assets\Scripts\Object\Island.cs" />
      <Compile Include="Assets\Scripts\System\LevelGenerate.cs" />
  <Reference Include="UnityEngine.UI">

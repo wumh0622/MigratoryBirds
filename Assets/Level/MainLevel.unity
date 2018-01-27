@@ -163,8 +163,11 @@ MonoBehaviour:
   - {fileID: 1447382390867462, guid: 72ddecd86a0f030448fb56bb3eede0f7, type: 2}
   - {fileID: 1693010506418802, guid: 718965b44c22e7e49b43e7bb50b61547, type: 2}
   - {fileID: 1409561955510434, guid: 0d4cf5ee681a4f847b2925a05998a2f8, type: 2}
+  enemy:
+  - {fileID: 1632226809906112, guid: 63d5361c33230c941af267b69e962f8b, type: 2}
   goodIslandChances: 35
   badIslandChances: 100
+  enemySpawnChances: 50
 --- !u!1001 &672906299
 Prefab:
   m_ObjectHideFlags: 0

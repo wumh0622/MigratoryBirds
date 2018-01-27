@@ -8,6 +8,7 @@ public class Main : MonoBehaviour {
 	void Start () {
         LevelGenerate.instence.GenerateBackGround();
         LevelGenerate.instence.InvokeRepeating("GenerateIsland", 1, 1);
+        LevelGenerate.instence.InvokeRepeating("GenerateEnemy", 2, 2);
     }
 	
 	// Update is called once per frame
