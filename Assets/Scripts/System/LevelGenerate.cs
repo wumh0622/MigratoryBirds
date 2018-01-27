@@ -23,7 +23,7 @@ public class LevelGenerate : MonoBehaviour {
     void Start()
     {
         mainCamera = Camera.main;
-        EnemyBase.speed = scrollingSpeed;
+        Enemy.speed = scrollingSpeed;
         Island.speed = scrollingSpeed;
         BackGroundScrollDown.speed = scrollingSpeed;
     }
