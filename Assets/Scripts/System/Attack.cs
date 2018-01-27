@@ -33,7 +33,7 @@ public class Attack : MonoBehaviour
     {
         if (attacking && other.transform == attackPoint)
         {
-            GameManager.Instance.killBirds(1);
+            //GameManager.Instance.killBirds(1);
             GameManager.Instance.hurtSP(other.GetComponent<Enemy>().passiveAttackSP);
             Destroy(other.gameObject);
             Destroy(gameObject);

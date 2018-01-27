@@ -85,10 +85,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
+  MessageId: 
   activeAttack: 1
   activeAttackBirds: 1
   activeAttackSP: 1
   passiveAttackSP: 1
+  cureSP: 0
 --- !u!212 &212040394738635868
 SpriteRenderer:
   m_ObjectHideFlags: 1

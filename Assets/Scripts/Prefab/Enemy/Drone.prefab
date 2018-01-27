@@ -71,10 +71,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
+  MessageId: 
   activeAttack: 1
   activeAttackBirds: 1
   activeAttackSP: 1
   passiveAttackSP: 1
+  cureSP: 0
 --- !u!114 &114798132176501844
 MonoBehaviour:
   m_ObjectHideFlags: 1
