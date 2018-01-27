@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public int activeAttackSP;
 
     public int passiveAttackSP;
+    public int cureSP;
 
     // Use this for initialization
     void Start()
@@ -21,7 +22,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    public virtual void Update()
+    void Update()
     {
         Camera mainCamera = Camera.main;
         transform.Translate(0, speed * -1, 0);
@@ -33,7 +34,8 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (activeAttack)
+        
+        if (activeAttack && other.tag == "DangerZone")
         {
             var gameManager = GameManager.Instance;
 
@@ -42,9 +44,25 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    bool isPress;
     void OnMouseDown()
     {
-        var gameManager = GameManager.Instance;
-        gameManager.attack(gameObject);
+        if (!isPress)
+        {
+            isPress = true;
+            Debug.Log("OnMouseDown");
+            var gameManager = GameManager.Instance;
+            if (gameObject.tag == "Enemy")
+            {
+                gameManager.attack(gameObject);
+                BirdsManger.instence.DoAttack(gameObject);
+            }
+            else if (gameObject.tag == "Food")
+            {
+                gameManager.Cure(cureSP);
+                Destroy(gameObject);
+            }
+        }
+
     }
 }

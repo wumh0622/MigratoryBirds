@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101782706736948}
   - component: {fileID: 212116507227153048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,9 +39,9 @@ GameObject:
   - component: {fileID: 50664809438232042}
   - component: {fileID: 58025062422823026}
   - component: {fileID: 114425731330131052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ThisIsBird
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,8 +65,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1955354808809242}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -2.83, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.14116682, y: 0.66142035, z: 0.016340088}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4101782706736948}
@@ -102,7 +102,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -119,10 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b661afff7015f934393f8a5b493ff686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackBirdAmount: 0
   attackPoint: {fileID: 0}
-  speed: 5
-  turnSpeed: 1.5
+  attacking: 0
 --- !u!212 &212116507227153048
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -200,7 +198,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: eef8e857c6a7cfe418bbf91b0430c15b, type: 3}
   m_Color: {r: 1, g: 0.9766734, b: 0.66176474, a: 1}
   m_FlipX: 0

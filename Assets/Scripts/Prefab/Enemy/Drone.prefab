@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 212329756887522706}
   - component: {fileID: 114798132176501844}
   - component: {fileID: 58243021368452282}
+  - component: {fileID: 114285355857823378}
+  - component: {fileID: 114817536031521042}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Enemy
@@ -57,6 +59,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &114285355857823378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445076546512152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110d8c0cd64fddc469bee3709155201e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  activeAttack: 1
+  activeAttackBirds: 1
+  activeAttackSP: 1
+  passiveAttackSP: 1
 --- !u!114 &114798132176501844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -72,6 +90,17 @@ MonoBehaviour:
   attackBirds: 1
   attackSP: 1
   hp: 1
+--- !u!114 &114817536031521042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445076546512152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9707304b82dc534ba7cfaaf621cdfc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212329756887522706
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212837946878897624}
   - component: {fileID: 114033917212304070}
   - component: {fileID: 58877076293365496}
+  - component: {fileID: 114916512106336842}
   m_Layer: 0
   m_Name: Dogs
   m_TagString: Enemy
@@ -72,6 +73,22 @@ MonoBehaviour:
   attackBirds: 1
   attackSP: 10
   hp: 1
+--- !u!114 &114916512106336842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1942562021191078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110d8c0cd64fddc469bee3709155201e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  activeAttack: 1
+  activeAttackBirds: 1
+  activeAttackSP: 1
+  passiveAttackSP: 1
 --- !u!212 &212837946878897624
 SpriteRenderer:
   m_ObjectHideFlags: 1

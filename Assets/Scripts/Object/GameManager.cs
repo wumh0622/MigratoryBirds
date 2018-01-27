@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public int numberOfBirds = 100;
+    //public int numberOfBirds = 100;
     public int sp = 100;
 
     void Awake()
@@ -26,7 +26,15 @@ public class GameManager : MonoBehaviour
 
     public void killBirds(int birds)
     {
-        numberOfBirds -= birds;
+        if (BirdsManger.instence.GetBirdAmount() < birds)
+            birds = BirdsManger.instence.GetBirdAmount();
+
+        //numberOfBirds -= birds;
+        for (int i = 0; i < birds; i++)
+            {
+                BirdsManger.instence.KillBird();
+            }
+
         //birds die animation
     }
 
@@ -38,5 +46,14 @@ public class GameManager : MonoBehaviour
     public void attack(GameObject enemy)
     {
         //call birds attack
+    }
+
+    public void Cure(int cureAmount)
+    {
+        sp += cureAmount;
+        if(sp > 100)
+        {
+            sp = 100;
+        }
     }
 }
