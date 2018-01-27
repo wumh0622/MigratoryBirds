@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
 
     public int hp;
 
+	public string MessageId;
+
     public bool activeAttack;
     public int activeAttackBirds;
     public int activeAttackSP;
@@ -28,7 +30,7 @@ public class Enemy : MonoBehaviour
         transform.Translate(0, speed * -1, 0);
         if (transform.position.y < -2f * mainCamera.orthographicSize)
         {
-            Destroy(gameObject);
+			Destroy(gameObject);
         }
     }
 
@@ -37,6 +39,11 @@ public class Enemy : MonoBehaviour
         
         if (activeAttack && other.tag == "DangerZone")
         {
+			if (!string.IsNullOrEmpty(MessageId))
+			{
+				MessageUiManager.Instance.AddMessage(MessageId);
+			}
+
             var gameManager = GameManager.Instance;
 
             gameManager.killBirds(activeAttackBirds);
