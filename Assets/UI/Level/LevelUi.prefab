@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224829307403987472}
   - component: {fileID: 222659648025033750}
+  - component: {fileID: 225514437006750294}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -108,6 +109,7 @@ GameObject:
   - component: {fileID: 223094895050990844}
   - component: {fileID: 114303220047439794}
   - component: {fileID: 114399100367794024}
+  - component: {fileID: 114708512963916882}
   m_Layer: 5
   m_Name: LevelUi
   m_TagString: Untagged
@@ -268,7 +270,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300014, guid: ddf68a0e91d48054a937927f1f8b7fa0, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 54ba727d0582fc14fa98ff0fe7c7340d, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -295,7 +297,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300004, guid: ddf68a0e91d48054a937927f1f8b7fa0, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 54ba727d0582fc14fa98ff0fe7c7340d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -322,7 +324,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300010, guid: ddf68a0e91d48054a937927f1f8b7fa0, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 54ba727d0582fc14fa98ff0fe7c7340d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -567,7 +569,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300022, guid: ddf68a0e91d48054a937927f1f8b7fa0, type: 3}
+  m_Sprite: {fileID: 21300014, guid: 54ba727d0582fc14fa98ff0fe7c7340d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -594,7 +596,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300024, guid: ddf68a0e91d48054a937927f1f8b7fa0, type: 3}
+  m_Sprite: {fileID: 21300016, guid: 54ba727d0582fc14fa98ff0fe7c7340d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -602,6 +604,23 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114708512963916882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312400995465106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c0b5fd654ed4440bf547f80c751ea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HpBarFull: {fileID: 114159870880499354}
+  Pause: {fileID: 114258005831384922}
+  Resume: {fileID: 114290270928710208}
+  MainButton: {fileID: 114812519675681898}
+  GameOverCanvasGroup: {fileID: 225514437006750294}
+  MainSceneNmae: Start
 --- !u!114 &114783960623564092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -621,7 +640,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300006, guid: ddf68a0e91d48054a937927f1f8b7fa0, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 54ba727d0582fc14fa98ff0fe7c7340d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -901,7 +920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -829}
+  m_AnchoredPosition: {x: 0, y: -813}
   m_SizeDelta: {x: 1047, y: 222}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224451725512720496
@@ -1054,3 +1073,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225514437006750294
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1019467172764676}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

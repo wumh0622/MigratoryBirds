@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelUi : MonoBehaviour {
+	public LevelUi Instance = null;
 	public Image HpBarFull;
 
 	public Button Pause;
@@ -16,6 +17,7 @@ public class LevelUi : MonoBehaviour {
 
 	private void Awake()
 	{
+		Instance = this;
 		Pause.gameObject.SetActive(false);
 		Resume.gameObject.SetActive(false);
 		GameOverCanvasGroup.alpha = 0;
@@ -30,5 +32,10 @@ public class LevelUi : MonoBehaviour {
 	public void GoToMainScene()
 	{
 		UnityEngine.SceneManagement.SceneManager.LoadScene("Start");
+	}
+
+	public void ShowGameOver()
+	{
+		GameOverCanvasGroup.alpha = 1;
 	}
 }
