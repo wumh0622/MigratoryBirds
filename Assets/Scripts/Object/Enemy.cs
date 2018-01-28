@@ -82,6 +82,7 @@ public class Enemy : MonoBehaviour
             }
             else if (gameObject.tag == "Food")
             {
+                GetComponent<AudioManger>().play(Random.Range(0,7));
                 gameManager.Cure(cureSP);
                 Destroy(gameObject);
             }
