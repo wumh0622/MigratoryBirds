@@ -11,11 +11,15 @@ public class MessageUiController : MonoBehaviour {
 	public CanvasGroup canvasGroup;
 	public bool Active = false;
 	public MessageUiManager.MessageData messageData = new MessageUiManager.MessageData();
+	public float offsetX;
 
 	float toAlpah;
 	float fromAlpha;
 	float fadeOverTtime;
 	float ShowTime = 0;
+	Vector3 toPos;
+	Vector3 fromPos;
+	Vector3 showPos;
 
 	void Awake(){
 		Icon = transform.Find ("Icon").GetComponent<Image>();
@@ -25,6 +29,7 @@ public class MessageUiController : MonoBehaviour {
 		canvasGroup = GetComponent<CanvasGroup> ();
 
 		canvasGroup.alpha = 0;
+		showPos = ((RectTransform)transform).anchoredPosition3D;
 	}
 	public void Show(){
 		Debug.Log ("MessageUiController Show! " + gameObject.name);
@@ -33,6 +38,8 @@ public class MessageUiController : MonoBehaviour {
 		toAlpah = 1;
 		fromAlpha = 0;
 		fadeOverTtime = 0;
+		toPos = showPos;
+		fromPos = showPos + Vector3.right * offsetX;
 
 		Title.text = messageData.title;
 		InfoText.text = messageData.info;
@@ -43,6 +50,8 @@ public class MessageUiController : MonoBehaviour {
 		toAlpah = 0;
 		fromAlpha = 1;
 		fadeOverTtime = 0;
+		toPos = showPos + Vector3.right * offsetX;
+		fromPos = showPos;
 	}
 
 	public void End(){
@@ -62,6 +71,9 @@ public class MessageUiController : MonoBehaviour {
 			float rate = Mathf.Clamp (fadeOverTtime, 0, messageData.FadeTime) / messageData.FadeTime;
 			canvasGroup.alpha = Mathf.Lerp (fromAlpha, toAlpah, rate);
 			//Debug.Log ("rate("+rate+"), fromAlpha("+fromAlpha+"), toAlpah("+toAlpah+"), canvasGroup.alpha("+canvasGroup.alpha+")");
+
+			((RectTransform)transform).anchoredPosition3D = Vector3.Lerp(fromPos, toPos, rate);
+
 			fadeOverTtime += Time.deltaTime;
 			if (canvasGroup.alpha == toAlpah) 
 			{
