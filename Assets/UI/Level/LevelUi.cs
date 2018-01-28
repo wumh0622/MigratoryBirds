@@ -45,7 +45,8 @@ public class LevelUi : MonoBehaviour {
 
 	public void GoToMainScene()
 	{
-		UnityEngine.SceneManagement.SceneManager.LoadScene("Start");
+        Time.timeScale = 1;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Start");
 	}
 
 	public void ShowGameOver()

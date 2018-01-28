@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114146550250150606}
   - component: {fileID: 58856076597128544}
   - component: {fileID: 114362706285057482}
+  - component: {fileID: 95294665097211406}
   m_Layer: 0
   m_Name: Windmill
   m_TagString: Enemy
@@ -58,6 +59,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &95294665097211406
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125048120957084}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bfee6f0adea9b624d9a1176626dee660, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114146550250150606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -88,7 +106,7 @@ MonoBehaviour:
   MessageId: Windmill
   activeAttack: 1
   activeAttackBirds: 1
-  activeAttackSP: 1
+  activeAttackSP: 5
   passiveAttackSP: 1
   cureSP: 0
 --- !u!212 &212464831539404388
@@ -125,12 +143,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eef8e857c6a7cfe418bbf91b0430c15b, type: 3}
-  m_Color: {r: 0.9632353, g: 0.6091047, b: 0.8362368, a: 1}
+  m_Sprite: {fileID: 21300014, guid: 6760f89b9290fb64694068f4fb93050f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.4, y: 3.58}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

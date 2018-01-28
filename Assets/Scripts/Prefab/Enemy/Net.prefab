@@ -127,7 +127,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -172,7 +172,7 @@ MonoBehaviour:
   MessageId: Net
   activeAttack: 1
   activeAttackBirds: 1
-  activeAttackSP: 1
+  activeAttackSP: 5
   passiveAttackSP: 1
   cureSP: 0
 --- !u!114 &114355835128874220

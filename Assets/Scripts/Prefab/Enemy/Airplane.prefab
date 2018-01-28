@@ -153,8 +153,8 @@ MonoBehaviour:
   hp: 0
   MessageId: Airplane
   activeAttack: 1
-  activeAttackBirds: 1
-  activeAttackSP: 1
+  activeAttackBirds: 2
+  activeAttackSP: 5
   passiveAttackSP: 1
   cureSP: 0
 --- !u!114 &114813028781175854

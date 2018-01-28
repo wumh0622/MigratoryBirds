@@ -6,7 +6,8 @@ public class Main : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Screen.SetResolution(360, 640, true);
+		Time.timeScale = 1;
+		Screen.SetResolution(1080, 1920, true);
         //LevelGenerate.instence.GenerateBackGround();
         LevelGenerate.instence.InvokeRepeating("GenerateIsland", 1f, 1f);
     }

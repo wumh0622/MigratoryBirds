@@ -585,8 +585,9 @@ MonoBehaviour:
   badIsland:
   - {fileID: 1447382390867462, guid: 72ddecd86a0f030448fb56bb3eede0f7, type: 2}
   PassiveEnemy_NCNE:
+  - {fileID: 1942562021191078, guid: 484b7da35385fcd40a97554658b6a08d, type: 2}
   - {fileID: 1627406328393660, guid: 2114f93760b9ec348a74122528089b3e, type: 2}
-  - {fileID: 1227348758282138, guid: 6b66e326760687a4e92bc346dde93d01, type: 2}
+  - {fileID: 1125048120957084, guid: c59f965538559b144a26ff49f4bd72e6, type: 2}
   PassiveEnemy_NCBH: []
   Drone:
   - {fileID: 1322769892020202, guid: 61b23cecf79e06b4b9cac75e82f100f9, type: 2}

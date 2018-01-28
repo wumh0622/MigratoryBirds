@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
         timer += Time.deltaTime;
         if(BirdsManger.instence.GetBirdAmount() <= 0)
         {
+            Time.timeScale = 0;
             LevelUi.Instance.ShowGameOver();
         }
         if(timer > 0.1f)
@@ -31,6 +33,8 @@ public class GameManager : MonoBehaviour
             hurtSP(1);
             timer = 0;
         }
+
+        
 	}
 
     public void killBirds(int birds)
@@ -67,6 +71,14 @@ public class GameManager : MonoBehaviour
         if(sp > 100)
         {
             sp = 100;
+        }
+    }
+
+    public void IsWin()
+    {
+        if(sp > 0 && BirdsManger.instence.GetBirdAmount() <= 5)
+        {
+            SceneManager.LoadScene("Finish");
         }
     }
 }

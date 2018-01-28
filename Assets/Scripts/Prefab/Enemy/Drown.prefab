@@ -172,7 +172,7 @@ MonoBehaviour:
   MessageId: Drown
   activeAttack: 1
   activeAttackBirds: 1
-  activeAttackSP: 1
+  activeAttackSP: 5
   passiveAttackSP: 1
   cureSP: 0
 --- !u!114 &114903492930290302

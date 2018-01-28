@@ -40,6 +40,7 @@ public class BirdsManger : MonoBehaviour {
         birds[randomIndex].attackPoint = target.transform;
         birds[randomIndex].attacking = true;
         birds.RemoveAt(randomIndex);
+        GameManager.Instance.IsWin();
     }
 
 	public void KillBird()

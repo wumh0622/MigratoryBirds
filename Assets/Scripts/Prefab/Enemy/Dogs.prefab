@@ -230,7 +230,7 @@ MonoBehaviour:
   MessageId: Dogs
   activeAttack: 1
   activeAttackBirds: 1
-  activeAttackSP: 1
+  activeAttackSP: 5
   passiveAttackSP: 1
   cureSP: 0
 --- !u!212 &212837946878897624
