@@ -17,10 +17,13 @@ public class Enemy : MonoBehaviour
 
     public int passiveAttackSP;
     public int cureSP;
+    AudioManger audioManger;
 
     // Use this for initialization
     void Start()
     {
+        if(GetComponent<AudioManger>()!= null)
+            audioManger = GetComponent<AudioManger>();
     }
 
     // Update is called once per frame
@@ -31,6 +34,10 @@ public class Enemy : MonoBehaviour
         if (transform.position.y < -2f * mainCamera.orthographicSize)
         {
 			Destroy(gameObject);
+        }
+        if(audioManger!=null && GetComponentInChildren<AudioSource>().isPlaying == false)
+        {
+            audioManger.play(Random.Range(3, 7));
         }
     }
 
@@ -48,6 +55,10 @@ public class Enemy : MonoBehaviour
 
             gameManager.killBirds(activeAttackBirds);
             gameManager.hurtSP(activeAttackSP);
+            if(audioManger!= null)
+            {
+                audioManger.play(Random.Range(0, 3));
+            }
         }
     }
 
@@ -63,6 +74,11 @@ public class Enemy : MonoBehaviour
             {
                 gameManager.attack(gameObject);
                 BirdsManger.instence.DoAttack(gameObject);
+                if(audioManger!= null)
+                {
+                    audioManger.play(Random.Range(7,9));
+                    GetComponentInChildren<AudioSource>().transform.parent = null;
+                }
             }
             else if (gameObject.tag == "Food")
             {

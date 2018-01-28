@@ -29,11 +29,19 @@ public class Island : MonoBehaviour {
     {
         if (!isPress)
         {
-            Debug.Log("Press");
-            Time.timeScale = 0;
-            LevelGenerate.instence.PauseScroll();
-            LevelUi.Instance.ShowBreakImage();
-            isPress = true;
+            if (gameObject.tag == "GoodIsland")
+            {
+                Debug.Log("Press");
+                Time.timeScale = 0;
+                LevelGenerate.instence.PauseScroll();
+                LevelUi.Instance.ShowBreakImage();
+                isPress = true;
+            }
+			else if(gameObject.tag == "BadIsland")
+			{
+                GameManager.Instance.hurtSP(50);
+                GameManager.Instance.killBirds(10);
+            }
         }
 
     }

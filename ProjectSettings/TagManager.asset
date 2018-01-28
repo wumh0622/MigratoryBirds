@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - DangerZone
   - Food
+  - typhoon
+  - BadIsland
+  - GoodIsland
   layers:
   - Default
   - TransparentFX

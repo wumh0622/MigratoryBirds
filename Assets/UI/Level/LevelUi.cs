@@ -67,6 +67,12 @@ public class LevelUi : MonoBehaviour {
         Debug.Log("PPPP");
         LevelGenerate.instence.ContinueScroll();
 		BreakTimeImage.gameObject.SetActive(false);
-		
-	}
+		foreach (var item in GameObject.FindGameObjectsWithTag("typhoon"))
+		{
+            Destroy(item);
+        }
+
+        GameManager.Instance.sp = 100;
+
+    }
 }

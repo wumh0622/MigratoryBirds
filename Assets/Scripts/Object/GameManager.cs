@@ -18,12 +18,18 @@ public class GameManager : MonoBehaviour
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(BirdsManger.instence.GetBirdAmount() <= 0)
+    float timer = 0;
+    // Update is called once per frame
+    void Update () {
+        timer += Time.deltaTime;
+        if(BirdsManger.instence.GetBirdAmount() <= 0)
         {
             LevelUi.Instance.ShowGameOver();
+        }
+        if(timer > 0.1f)
+        {
+            hurtSP(1);
+            timer = 0;
         }
 	}
 
@@ -44,6 +50,10 @@ public class GameManager : MonoBehaviour
     public void hurtSP(int numberOfSP)
     {
         sp -= numberOfSP;
+        if(sp <= 0)
+        {
+            killBirds(9999);
+        }
     }
 
     public void attack(GameObject enemy)
