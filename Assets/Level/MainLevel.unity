@@ -1513,10 +1513,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2826,11 +2826,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4328329736905252, guid: 7c3a5a0abf7a3af4bbf82790b328fce4,
     type: 2}
   m_PrefabInternal: {fileID: 860832204}
---- !u!1 &1401050762 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1473442937240906, guid: b721de5c5f8393d47b7667c3df304757,
-    type: 2}
-  m_PrefabInternal: {fileID: 2099852306}
 --- !u!1001 &1412593847
 Prefab:
   m_ObjectHideFlags: 0
@@ -4419,11 +4414,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114728365441047976, guid: b721de5c5f8393d47b7667c3df304757,
-        type: 2}
-      propertyPath: MessageUiElementSample
-      value: 
-      objectReference: {fileID: 1401050762}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b721de5c5f8393d47b7667c3df304757, type: 2}
   m_IsPrefabParent: 0

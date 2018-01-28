@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7960674f5312e394da66ea8c288696b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageUiElementSample: {fileID: 0}
+  MessageUiElementSample: {fileID: 1473442937240906}
   messageDataList:
   - ID: Airplane
     type: A
