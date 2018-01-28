@@ -242,6 +242,13 @@ MonoBehaviour:
     Icon: {fileID: 0}
     FadeTime: 0.5
     ShowMessageTime: 2
+  - ID: Drown
+    type: A
+    title: "\u7A7A\u62CD\u6A5F"
+    info: "\u7A7A\u62CD\u6A5F\u5931\u63A7\u649E\u64CA"
+    Icon: {fileID: 0}
+    FadeTime: 0.5
+    ShowMessageTime: 2
   IsOnShow: 0
 --- !u!114 &114817666484087368
 MonoBehaviour:
