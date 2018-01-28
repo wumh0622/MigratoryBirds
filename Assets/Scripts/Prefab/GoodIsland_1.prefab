@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 58730916923106350}
   m_Layer: 0
   m_Name: GoodIsland_1
-  m_TagString: Untagged
+  m_TagString: GoodIsland
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1176053288050606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.27, y: -0.81, z: 0}
+  m_LocalPosition: {x: -2.5695198, y: 2.98, z: 0}
   m_LocalScale: {x: 0.5165874, y: 0.5165874, z: 0.5165874}
   m_Children: []
   m_Father: {fileID: 0}
