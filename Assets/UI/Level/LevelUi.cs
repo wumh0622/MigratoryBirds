@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelUi : MonoBehaviour {
-	public LevelUi Instance = null;
+	public static LevelUi Instance = null;
 	public Image HpBarFull;
 
 	public Button Pause;
