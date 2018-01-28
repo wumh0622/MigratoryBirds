@@ -122,6 +122,7 @@ MonoBehaviour:
     Icon: {fileID: 0}
     FadeTime: 0.5
     ShowMessageTime: 3
+  offsetX: 0
 --- !u!114 &114474915460766370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -375,7 +376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 542.9, y: -683.5}
+  m_AnchoredPosition: {x: 553, y: -674}
   m_SizeDelta: {x: 687.2, y: 218.2}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224111613227950232
@@ -458,7 +459,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1473442937240906}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
