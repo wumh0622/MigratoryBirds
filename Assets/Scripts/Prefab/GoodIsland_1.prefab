@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4609607934337308}
   - component: {fileID: 212271732811674402}
   - component: {fileID: 114445446320703446}
+  - component: {fileID: 95909287537532614}
   m_Layer: 0
   m_Name: GoodIsland_1
   m_TagString: Untagged
@@ -35,12 +36,29 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1176053288050606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.712774, y: 0.9846685, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -1.27, y: -0.81, z: 0}
+  m_LocalScale: {x: 0.5165874, y: 0.5165874, z: 0.5165874}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95909287537532614
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1176053288050606}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c80d46e834a927a45b7361a566c04b4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114445446320703446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,12 +104,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: da262ac0581a5054ba001fcf2992e6ab, type: 3}
+  m_Sprite: {fileID: 21300032, guid: b1744cb355665064e969fdb84af97f07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.23, y: 4.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

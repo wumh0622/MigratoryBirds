@@ -22,7 +22,7 @@ public class Attack : MonoBehaviour
         {
             Vector3 diff = attackPoint.position - transform.position;
             diff.Normalize();
-
+            
             float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, rot_z - 90), .1f);
             transform.Translate(transform.up * 0.09f);
@@ -35,6 +35,7 @@ public class Attack : MonoBehaviour
         {
             //GameManager.Instance.killBirds(1);
             GameManager.Instance.hurtSP(other.GetComponent<Enemy>().passiveAttackSP);
+            GetComponent<AudioManger>().play(Random.Range(0, 7));
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
@@ -42,6 +43,7 @@ public class Attack : MonoBehaviour
 
     public void Die()
     {
+        GetComponent<AudioManger>().play(Random.Range(7, 16));
         Destroy(gameObject);
     }
 }
