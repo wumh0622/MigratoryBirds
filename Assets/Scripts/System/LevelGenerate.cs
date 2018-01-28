@@ -40,7 +40,7 @@ public class LevelGenerate : MonoBehaviour
         Island.speed = scrollingSpeed;
         BackGroundScrollDown.speed = scrollingSpeed;
         slectedList = ReturnSelectedElements();
-                IslandChancesDefault = IslandChances;
+        IslandChancesDefault = IslandChances;
         goodIslandChancesDefault = goodIslandChances;
         badIslandChancesDefault = badIslandChances;
     }
@@ -196,6 +196,21 @@ public class LevelGenerate : MonoBehaviour
 
         return selectedElements;
 
+    }
+
+    public void PauseScroll()
+    {
+        Enemy.speed = 0;
+        Island.speed = 0;
+        Debug.Log(Enemy.speed + "  " + Island.speed);
+        //BackGroundScrollDown.speed = scrollingSpeed;
+    }
+
+    public void ContinueScroll()
+    {
+        Time.timeScale = 1;
+        Enemy.speed = scrollingSpeed;
+        Island.speed = scrollingSpeed;
     }
 
 

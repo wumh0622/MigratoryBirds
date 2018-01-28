@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\buuton.cs" />
      <Compile Include="Assets\Plugin\MessageSystem\MessageUiController.cs" />
      <Compile Include="Assets\Plugin\MessageSystem\MessageUiManager.cs" />
      <Compile Include="Assets\Scripts\AudioManger.cs" />

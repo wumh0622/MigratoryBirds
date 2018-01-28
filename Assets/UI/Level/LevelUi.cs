@@ -6,16 +6,19 @@ using UnityEngine.UI;
 public class LevelUi : MonoBehaviour {
 	public static LevelUi Instance = null;
 	public Image HpBarFull;
+    public Image BreakTimeImage;
 
-	public Button Pause;
+    public Button Pause;
 	public Button Resume;
 
 	public Button MainButton;
 	public CanvasGroup GameOverCanvasGroup;
 
 	public string MainSceneNmae;
+    bool isBreakTime = false;
 
-	private void Awake()
+
+    private void Awake()
 	{
 		Instance = this;
 		Pause.gameObject.SetActive(false);
@@ -25,8 +28,19 @@ public class LevelUi : MonoBehaviour {
 
 	private void Update()
 	{
-		float rate = GameManager.Instance.sp / 100;
-		HpBarFull.fillAmount = Mathf.Lerp(0, 1, rate);
+		
+		float rate = GameManager.Instance.sp / 100.0f;
+        //Debug.Log(rate + "    " + GameManager.Instance.sp);
+        HpBarFull.fillAmount = Mathf.Lerp(0, 1, rate);
+		/* if(isBreakTime)
+		{
+			if(Input.GetMouseButtonDown(0))
+			{
+                HideBreakImage();
+                
+                isBreakTime = false;
+            }
+		} */
 	}
 
 	public void GoToMainScene()
@@ -36,6 +50,23 @@ public class LevelUi : MonoBehaviour {
 
 	public void ShowGameOver()
 	{
-		GameOverCanvasGroup.alpha = 1;
+        GameOverCanvasGroup.gameObject.SetActive(true);
+        GameOverCanvasGroup.alpha = 1;
+	}
+
+	public void ShowBreakImage()
+	{
+        BreakTimeImage.gameObject.SetActive(true);
+        isBreakTime = true;
+        //Invoke("HideBreakImage", 1);
+
+    }
+
+	public void HideBreakImage()
+	{
+        Debug.Log("PPPP");
+        LevelGenerate.instence.ContinueScroll();
+		BreakTimeImage.gameObject.SetActive(false);
+		
 	}
 }
