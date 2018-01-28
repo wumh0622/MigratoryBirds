@@ -25,7 +25,7 @@ public class Attack : MonoBehaviour
             
             float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, rot_z - 90), .1f);
-            transform.Translate(transform.up * 0.09f);
+            transform.Translate(transform.up * 0.2f);
         }
     }
 

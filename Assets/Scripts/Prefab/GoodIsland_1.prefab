@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212271732811674402}
   - component: {fileID: 114445446320703446}
   - component: {fileID: 95909287537532614}
+  - component: {fileID: 58730916923106350}
   m_Layer: 0
   m_Name: GoodIsland_1
   m_TagString: Untagged
@@ -42,6 +43,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58730916923106350
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1176053288050606}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.121171944, y: 0.07024478}
+  serializedVersion: 2
+  m_Radius: 2.1849997
 --- !u!95 &95909287537532614
 Animator:
   serializedVersion: 3

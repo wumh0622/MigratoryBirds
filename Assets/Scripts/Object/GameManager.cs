@@ -21,7 +21,10 @@ public class GameManager : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(BirdsManger.instence.GetBirdAmount() <= 0)
+        {
+            LevelUi.Instance.ShowGameOver();
+        }
 	}
 
     public void killBirds(int birds)

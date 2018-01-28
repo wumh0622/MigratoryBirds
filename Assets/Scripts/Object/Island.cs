@@ -23,4 +23,19 @@ public class Island : MonoBehaviour {
             Destroy(gameObject);
         }
 	}
+
+    bool isPress = false;
+    void OnMouseDown()
+    {
+        if (!isPress)
+        {
+            Debug.Log("Press");
+            Time.timeScale = 0;
+            LevelGenerate.instence.PauseScroll();
+            LevelUi.Instance.ShowBreakImage();
+            isPress = true;
+        }
+
+    }
+
 }
