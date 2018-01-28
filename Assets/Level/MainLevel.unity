@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 364845656}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f91bb88c1a443704398b95417118423c, type: 3}
   m_Name: 
@@ -1334,7 +1334,7 @@ Prefab:
       objectReference: {fileID: 364845658}
     - target: {fileID: 1019467172764676, guid: d747f084ecdec6346b4430f0970bdfd4, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d747f084ecdec6346b4430f0970bdfd4, type: 2}
@@ -2810,6 +2810,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c03d183792cc9664bb3c46a779551fce, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1337634616 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114708512963916882, guid: d747f084ecdec6346b4430f0970bdfd4,
+    type: 2}
+  m_PrefabInternal: {fileID: 575186681}
+  m_Script: {fileID: 11500000, guid: f8c0b5fd654ed4440bf547f80c751ea1, type: 3}
 --- !u!4 &1366543131 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4328329736905252, guid: 7c3a5a0abf7a3af4bbf82790b328fce4,
@@ -4048,7 +4054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2000273912
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4105,7 +4111,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2000273914}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1337634616}
+        m_MethodName: HideBreakImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2000273914
