@@ -7,6 +7,7 @@ public class LevelUi : MonoBehaviour {
 	public static LevelUi Instance = null;
 	public Image HpBarFull;
     public Image BreakTimeImage;
+	public Image BadIslandImage;
 
     public Button Pause;
 	public Button Resume;
@@ -65,7 +66,6 @@ public class LevelUi : MonoBehaviour {
 
 	public void HideBreakImage()
 	{
-        Debug.Log("PPPP");
         LevelGenerate.instence.ContinueScroll();
 		BreakTimeImage.gameObject.SetActive(false);
 		foreach (var item in GameObject.FindGameObjectsWithTag("typhoon"))
@@ -74,6 +74,25 @@ public class LevelUi : MonoBehaviour {
         }
 
         GameManager.Instance.sp = 100;
+
+    }
+
+	public void ShowBadIslandImage()
+	{
+        BadIslandImage.gameObject.SetActive(true);
+        isBreakTime = true;
+        //Invoke("HideBreakImage", 1);
+
+    }
+
+	public void HideBadIslandImage()
+	{
+        LevelGenerate.instence.ContinueScroll();
+		BadIslandImage.gameObject.SetActive(false);
+		foreach (var item in GameObject.FindGameObjectsWithTag("typhoon"))
+		{
+            Destroy(item);
+        }
 
     }
 }

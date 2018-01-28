@@ -39,8 +39,12 @@ public class Island : MonoBehaviour {
             }
 			else if(gameObject.tag == "BadIsland")
 			{
+				Time.timeScale = 0;
+				LevelGenerate.instence.PauseScroll();
+                LevelUi.Instance.ShowBadIslandImage();
                 GameManager.Instance.hurtSP(50);
                 GameManager.Instance.killBirds(10);
+				isPress = true;
             }
         }
 
