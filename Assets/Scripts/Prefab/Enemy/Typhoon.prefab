@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
-  MessageId: 
+  MessageId: Typhoon
   activeAttack: 1
   activeAttackBirds: 99
   activeAttackSP: 1

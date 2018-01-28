@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
-  MessageId: 
+  MessageId: PlasticBags
   activeAttack: 1
   activeAttackBirds: 1
   activeAttackSP: 1
