@@ -232,7 +232,7 @@ MonoBehaviour:
   - ID: Airplane
     type: A
     title: "\u98DB\u6A5F"
-    info: "\u88AB\u98DB\u6A5F\u649E\u6B7B"
+    info: "\u88AB\u98DB\u6A5F\u649E\u64CA"
     Icon: {fileID: 0}
     FadeTime: 0.5
     ShowMessageTime: 2
@@ -252,15 +252,15 @@ MonoBehaviour:
     ShowMessageTime: 2
   - ID: Dogs
     type: A
-    title: "\u9047\u5230\u52D5\u7269"
-    info: "\u88AB\u54AC\u6B7B"
+    title: "\u72D7"
+    info: "\u53D7\u5230\u72D7\u8FFD\u9010\u53D7\u5230\u9A5A\u5687"
     Icon: {fileID: 0}
     FadeTime: 0.5
     ShowMessageTime: 2
   - ID: FlashLamp
     type: A
     title: "\u9583\u5149\u71C8"
-    info: "\u8996\u89BA\u53D7\u5230\u50B7\u5BB3"
+    info: "\u53D7\u5230\u9A5A\u5687\u4E26\u6688\u7729"
     Icon: {fileID: 0}
     FadeTime: 0.5
     ShowMessageTime: 2
