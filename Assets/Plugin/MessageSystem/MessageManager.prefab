@@ -136,7 +136,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 683bf7e399b67452b917502e364233fe, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -232,6 +232,7 @@ MonoBehaviour:
     FadeTime: 0.5
     ShowMessageTime: 3
   offsetX: 500
+  sfx: {fileID: 0}
 --- !u!114 &114474915460766370
 MonoBehaviour:
   m_ObjectHideFlags: 1

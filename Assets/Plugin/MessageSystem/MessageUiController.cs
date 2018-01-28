@@ -12,6 +12,7 @@ public class MessageUiController : MonoBehaviour {
 	public bool Active = false;
 	public MessageUiManager.MessageData messageData = new MessageUiManager.MessageData();
 	public float offsetX;
+	public AudioSource sfx;
 
 	float toAlpah;
 	float fromAlpha;
@@ -27,6 +28,7 @@ public class MessageUiController : MonoBehaviour {
 		InfoText = transform.Find ("Info").GetComponent<Text>();
 		Background = GetComponent<Image> ();
 		canvasGroup = GetComponent<CanvasGroup> ();
+		sfx = transform.Find("Audio Source").GetComponent<AudioSource>();
 
 		canvasGroup.alpha = 0;
 		showPos = ((RectTransform)transform).anchoredPosition3D;
@@ -40,6 +42,7 @@ public class MessageUiController : MonoBehaviour {
 		fadeOverTtime = 0;
 		toPos = showPos;
 		fromPos = showPos + Vector3.right * offsetX;
+		sfx.Play();
 
 		Title.text = messageData.title;
 		InfoText.text = messageData.info;
