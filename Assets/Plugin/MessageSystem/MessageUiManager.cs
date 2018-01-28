@@ -41,22 +41,22 @@ public class MessageUiManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.F12)) {
-			MessageData testdata = new MessageData();
-			testdata.info = "test info";
-			testdata.title = "test title";
-			AddMessage (testdata);
-		}
-		if (Input.GetKeyDown(KeyCode.F1))
-		{
-			MessageData testdata = new MessageData();
-			AddMessage("1");
-		}
-		if (Input.GetKeyDown(KeyCode.F2))
-		{
-			MessageData testdata = new MessageData();
-			AddMessage("2");
-		}
+		//if (Input.GetKeyDown (KeyCode.F12)) {
+		//	MessageData testdata = new MessageData();
+		//	testdata.info = "test info";
+		//	testdata.title = "test title";
+		//	AddMessage (testdata);
+		//}
+		//if (Input.GetKeyDown(KeyCode.F1))
+		//{
+		//	MessageData testdata = new MessageData();
+		//	AddMessage("1");
+		//}
+		//if (Input.GetKeyDown(KeyCode.F2))
+		//{
+		//	MessageData testdata = new MessageData();
+		//	AddMessage("2");
+		//}
 
 		if (messages.Count > 0 && !IsOnShow) {
 			IsOnShow = true;
