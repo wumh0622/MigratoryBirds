@@ -7,7 +7,7 @@ public class MainScene : MonoBehaviour {
 
 	void Start()
 	{
-        Screen.SetResolution(1080, 1920, true);
+        Screen.SetResolution(600, 1080, true);
     }
 	public string GameSceneName = "MainLevel";
 	public void GameStart()
