@@ -2940,22 +2940,6 @@ Prefab:
       propertyPath: m_Name
       value: ThisIsBird (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 4328329736905252, guid: 7c3a5a0abf7a3af4bbf82790b328fce4, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4328329736905252, guid: 7c3a5a0abf7a3af4bbf82790b328fce4, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4328329736905252, guid: 7c3a5a0abf7a3af4bbf82790b328fce4, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1955354808809242, guid: 7c3a5a0abf7a3af4bbf82790b328fce4, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c3a5a0abf7a3af4bbf82790b328fce4, type: 2}
   m_IsPrefabParent: 0
